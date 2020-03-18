@@ -1,4 +1,10 @@
 import random
+import string
+
+
+vowel_list=['a','e','i','o','u']
+consonant_list = list(set(list(string.ascii_letters)).difference(set(vowel_list))).sort()
+
 
 while(True):
     user_input = input("Press s to stop, anything else to conintue")
