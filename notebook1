@@ -1,0 +1,12 @@
+import random
+
+while(True):
+    user_input = input("Press s to stop, anything else to conintue")
+    if user_input == 's':
+        break
+        
+    first_letter=consonant_list[random.randint(0,20)]
+    second_letter=vowel_list[random.randint(0,4)]
+    third_letter=consonant_list[random.randint(0,20)]
+    three_letter_word=first_letter+second_letter+third_letter
+    print(three_letter_word)
